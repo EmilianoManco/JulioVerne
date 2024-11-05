@@ -1,0 +1,617 @@
+:root{
+    --fondoContenedor: rgb(0, 0 ,0, 0.80);
+}
+
+html{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 0;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgb(28, 170, 184) 15%,
+    rgba(242,179,114,1) 30%, 
+    rgba(233,146,77,1) 70%, 
+    rgba(229,90,46,1) 85%);
+}
+
+/* Utilidades */
+
+/* Texto Degradado */
+.gradient_text p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(345deg, rgb(28, 170, 184) 5%,
+    rgba(242,179,114,1) 30%, 
+    rgba(233,146,77,1) 50%, 
+    rgba(229,90,46,1) 75%);
+    background-repeat: repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 35px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+/* HEADER SIN USUARIO*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 0.5rem;
+    height: 60px;
+    width: 60px;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 100%;
+}
+.logo:last-child{
+    margin: 0 0.5rem 0 0;
+}
+.nombre-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* INDEX */
+
+/* Index_MAIN */
+#index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    margin: 2.5% auto 0 auto;
+}
+
+/*Index_CARRUSEL */
+
+.swiper {
+    width: 475px;
+    height: 200px;
+    background: rgb(0, 0, 0, 0.8);
+    border-radius: 35px;
+}
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 10px 5px;
+    width: 100px;
+    background-color: rgb(128, 128, 128, 0.5);
+    height: 180px;
+    border-radius: 15px;
+    padding: 0;
+}
+
+.swiper-slide img {
+    display: block;
+    margin: 0 auto; /* Aca centro las imagenes*/
+    height: 160px;
+    object-fit: cover;
+    
+}
+    /* -> No funca ver despues */
+.swiper-wrapper .swiper-button-next,
+.swiper-wrapper .swiper-button-prev{
+    transition: opacity 1s;
+    opacity: 0;
+}
+.swiper-wrapper:hover .swiper-button-next,
+.swiper-wrapper:hover .swiper-button-prev{
+    opacity: 1;
+}
+    /* <- */
+
+
+/* INDEX_Formulario */
+
+.index__contenedor{
+    display: grid;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 75px;
+    min-height: 50%;
+    height: 50vh;
+    width: min(40rem, 90%);
+}
+.index__formulario{
+    height: 375px;
+    min-width: 80%;
+    width: 350px;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+.index__formulario h2{
+    height: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.index__formulario p{
+    margin-left: 5px;
+    font-size: large;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.index__formulario label{
+    text-align: start;
+    align-items: center;
+}
+.index__input-contenedor{
+    /*border: 1px solid lightgray;*/
+    border-radius: 75px;
+    width: 325px;
+    padding: 7.5px 5%;
+}
+.m-p-cero{
+    padding-bottom: 0;
+    margin-bottom: 0;
+} 
+.input-btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.index__formulario input[type=email],
+.index__formulario input[type=password]{
+    border-radius: 75px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
+.index__formulario .olvido{
+    display: flex;
+    padding: 12.5px 0 0 18px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    height: 7.5px;
+}
+.index__formulario .p7-5{
+    padding: 7.5px 0 0 18px;
+}
+.index__formulario a{
+    color: #ff7514;
+}
+.index__formulario input[type=submit]{
+    display: block;
+    width: 175px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: x-large;
+}
+.index__formulario .error{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    color: red;
+    padding: 0;
+    height: 7.5px;
+    width: 100%;
+    margin: 12.5px auto -7.5px auto;
+}
+
+/* RECUPERAR CUENTA */
+
+
+/* RC_Main */
+#rc{
+    padding: 10% 25% 0 25%;
+    color: white;
+}
+
+/* RC_Formulario*/
+
+.rc__contenedor{
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 75px;
+    min-height: 50%;
+    height: 35vh;
+    max-width: 550px;
+    min-width: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /*pongo el contenedor en el medio*/
+}
+.rc__contenedor h2{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+}
+.rc__contenedor form{
+    height: 30vh;
+    min-width: 80%;
+    width: 425px;
+    /*border: 1px solid lightgray;*/
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.rc__contenedor p{
+    margin-left: 5px;
+    font-size: large;
+}
+.rc__contenedor label{
+    text-align: start;
+    align-items: center;
+}
+.rc__contenedor .rc__input-contenedor{
+    /*border: 1px solid lightgray;*/
+    border-radius: 75px;
+    width: 400px;
+    padding: 15px 5%;
+    margin: 5px;
+}
+.rc__contenedor input[type=email]{
+    padding: 5px;
+    border-radius: 75px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.rc__contenedor .rc__input-botones{
+    /*border: 1px solid lightgray;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 75px;
+    width: 400px;
+    padding: 5px 5%;
+}
+.rc__contenedor input[type=submit]{
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+}
+.rc__contenedor .volver{
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+}
+.rc__contenedor a{
+    text-decoration: none;
+}
+
+/* ENVIAR */
+
+/* Enviar_Main */
+
+#enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% auto 0 auto;
+    height: 80vh;
+    width: 100%;
+}
+
+/* Enviar_Formulario */
+
+.enviar__contenedor{
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 75px;
+    min-height: 50%;
+    height: 60vh;
+    width: min(90%, 900px);
+}
+.enviar__contenedor .enviar__formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 5%;
+    width: 100%;
+    height: 100%;
+}
+.enviar__contenedor h2{
+    padding: 0;
+    margin: 0 auto;
+}
+.enviar__contenedor label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    height: 65px;
+    font-size: 60px;
+    font-weight: 700;
+    width: 500px;
+}
+.enviar__contenedor h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto ;
+    color: white;
+    text-align: center;
+    width: min(100%, 900px);
+    font-size: 22px;
+    height: 60px;
+    line-height: 1.25;
+}
+.enviar__contenedor .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.enviar__contenedor .token{
+    padding: 5px;
+    height: 100px;
+    width: 75px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 700;
+}
+.enviar__contenedor input[type=submit]{
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* Enviar_Mensaje */
+
+.mensaje{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+    width: 650px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.mensaje h4{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.mensaje a{
+    display: block;
+    text-align: center;
+    width: 175px;
+    padding: 10px 20px;
+    margin: auto;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+/* RESET PASSWORD */
+
+/* RP Main */
+
+#resetp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2.5% auto 0 auto;
+    height: 80vh;
+    width: 100%;
+}
+
+/* RP Formularios */
+
+.rp_contenedor{
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 75px;
+    min-height: 50%;
+    height: 60vh;
+    width: min(90%, 900px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.rp_contenedor .rp_formulario{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.rp_formulario label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.rp_formulario h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+    height: 75px;
+}
+.rp_contenedor .rp_input-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 75%;
+    margin-bottom: 15px;
+}
+.rp_input-contenedor p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 15px auto;
+}
+.rp_input-contenedor input[type='password']{
+    padding: 5px;
+    border-radius: 75px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.rp_contenedor .rp_botones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 15px;
+}
+.rp_botones .rp_input-contenedor{
+    margin: 0;
+    width: 0;
+}
+.rp_contenedor input[type='submit']{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+}
+.rp_botones a{
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    width: 150px;
+    padding: 25px 24px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+}
+#cambcla{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2.5% auto 0 auto;
+        height: 80vh;
+        width: 100%;
+
+}
+.rp_formulario .respuesta{
+    color: red;
+    font-size: 15px;
+}

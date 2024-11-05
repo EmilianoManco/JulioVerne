@@ -1,0 +1,217 @@
+*{
+    font-family: Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+
+header{
+    display: flex;
+    max-width: 100%;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo img{
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+}
+.nombre-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3% 0 20%;
+    color: white;
+    width: 50%;
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nomb{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.logout__btn{
+    border: 0 solid;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Fondo */
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(28,170,184,1) 15%,
+    rgba(242,179,114,1) 30%, 
+    rgba(233,146,77,1) 70%, 
+    rgba(229,90,46,1) 85%);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Principal */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contenedor{
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 2rem;
+    width: 1200px;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscador{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    width: 1100px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 550px;
+    gap: 2px ;
+    text-align: center;
+}
+.buscador h4{
+    grid-column: 1 / 4;
+}
+.btn_volver{
+    width: 100%;
+}
+
+.btn_volver a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    width: 88%;
+}
+.btn_volver .volver{
+    border: 0.5px solid black;
+    padding: 5px 25px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.buscador .btn-cargar{
+    background-color: green;
+    color: white;
+    border: 0 solid;
+    border-radius: 25px;
+    grid-column: 4 / 6;
+    padding: 5px 5px;
+}
+.btn-confirmar{
+    background-color: green;
+    color: white;
+    border: 0 solid;
+    border-radius: 25px;
+    grid-column: 17 / 19;
+    grid-row: 19 / 20;
+    padding: 10px 5px;
+}
+.btn-danger{
+    border: 0 solid;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    border-radius: 25px;
+    grid-column: 2 / 4;
+    grid-row: 19 / 20;
+}
+
+.totales{
+    display: grid;
+    grid-column: 1 / 20;
+    grid-row: 18 / 19;
+}
+.total h5,
+.total_precio h5,
+.total_libros h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.total{
+    width: 50px;
+    grid-row: 18 / 19;
+    grid-column: 1 / 3;
+}
+.total_libros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid;
+    border-radius: 10px;
+    grid-column: 15 / 20;
+    grid-row: 18 / 19;
+}
+.total_precio{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 0 solid;
+    border-radius: 10px;
+    grid-column: 11 / 14;
+    grid-row: 18 / 19;
+}
+.total_libros input[type="number"],
+.total_precio input[type="number"]{
+    color: white;
+    border: 0 solid;
+    width: 75px;
+    background: none;
+    font-size: 1.3rem;
+    -webkit-appearance: textfield !important;
+    margin: 0;
+    -moz-appearance:textfield !important;
+    appearance: texfield !important;
+}
+
+
+/* TABLA DE RESULTADOS */
+
+.table{
+    background-color: none;
+    border: 0 solid;
+    border-radius: 25px;
+    grid-row: 2 / 18;
+    grid-column: 1 / 20;
+}

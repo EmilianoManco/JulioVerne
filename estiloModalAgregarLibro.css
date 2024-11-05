@@ -1,0 +1,11 @@
+#element{
+    display: none;
+    margin-top: -250px;
+    position: absolute;
+    z-index: 1050; /* Asegúrate de que el z-index sea más alto que el del modal de Bootstrap */
+    background: rgb(207, 112, 3);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,125 @@
+*{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(28,170,184,1) 15%,
+    rgba(242,179,114,1) 30%, 
+    rgba(233,146,77,1) 70%, 
+    rgba(229,90,46,1) 85%);
+}
+header{
+    display: flex;
+    max-width: 100%;
+    height: 75px;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 100px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    justify-items: start;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.logo img{
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+}
+.nombre-empresa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 21%;
+    color: white;
+    width: 50%;
+}
+
+.mensaje{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+    width: 650px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.mensaje h4{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.mensaje a{
+    display: block;
+    text-align: center;
+    width: 175px;
+    padding: 10px 20px;
+    margin: auto;
+    background-color: #ff7514;
+    color: white;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    font-size: x-large;
+    text-decoration: none;
+}
+.enviar__contenedor{
+    background-color: rgb(0, 0, 0,0.8);
+    border-radius: 75px;
+    min-height: 50%;
+    height: 60vh;
+    max-width: 900px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /*pongo el contenedor en el medio*/
+    flex-direction: column;
+}
+.enviar__contenedor label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    width: 500px;
+}
+.enviar__contenedor h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 0 auto;
+    color: white;
+    text-align: center;
+    max-width: 90%;
+    font-size: 15px;
+}
+.enviar__contenedor .enviar__formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+.enviar__contenedor .token{
+    padding: 5px;
+    height: 50px;
+    width: 75px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
